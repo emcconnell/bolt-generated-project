@@ -8,7 +8,7 @@ function TodoItem({ todo, toggleTodo, deleteTodo }) {
           type="checkbox"
           checked={todo.completed}
           onChange={() => toggleTodo(todo.id)}
-          className="mr-2"
+          className="mr-2 form-checkbox text-red-500"
         />
         <span className={todo.completed ? 'line-through text-gray-500' : 'text-gray-800'}>
           {todo.text}
